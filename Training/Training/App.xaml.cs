@@ -9,9 +9,8 @@ namespace Training
     {
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new MainPage();
+            var bootStrapper = new Bootstrapper();
+            MainPage = bootStrapper.CreateMainPage();
         }
 
         protected override void OnStart()
